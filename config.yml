@@ -1,0 +1,27 @@
+Re_CD:
+  trainer:
+    warmup: 3
+    lr: 0.0002
+    min_lr: 0.0000001
+    num_epochs: 200
+    optimizer: adamw
+    weight_decay: 0.05
+    resume: False
+    multi_scale_train: True
+    multi_scale_infer: False
+    multi_pred_weights: [0.5, 0.5, 0.5, 0.8, 1.0]
+
+  checkpoint: ChangeF
+
+  dataset:
+    root_dir: datasets/Re_CD/
+    batch_size: 10
+    image_size: 256
+    num_workers: 8
+    resize: False
+
+  model:
+    input_nc: 3
+    output_nc: 2
+    decoder_softmax: False
+    embed_dim: 256
