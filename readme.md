@@ -1,4 +1,4 @@
-# SPP ChangeFormer
+# MRF ChangeFormer
 
 ## How to use this code
 Adjust the relevant parameters in config.yml before running training
